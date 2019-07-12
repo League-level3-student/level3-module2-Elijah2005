@@ -40,7 +40,7 @@ public class _00_SortedArrayChecker {
 // The method returns true if the character
 // array is in alphabetical order and false otherwise
 // (You can compare characters just like integers)
-	static boolean charArraySorted(char[] array) {
+	static boolean charArraySorted(char[] array)  {
 		for (int i = 0; i < array.length - i; i++) {
 			if(array[i] > array[i + 1]) {
 				return false;
@@ -48,6 +48,7 @@ public class _00_SortedArrayChecker {
 		}
 		return true;
 	}
+	
 
 
 
@@ -67,5 +68,7 @@ public class _00_SortedArrayChecker {
 	}
 }
 
+	
+	
 
 
