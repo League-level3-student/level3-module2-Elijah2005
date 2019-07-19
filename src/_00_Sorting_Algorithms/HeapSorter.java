@@ -1,5 +1,7 @@
 package _00_Sorting_Algorithms;
 
+import java.awt.FontFormatException;
+
 public class HeapSorter extends Sorter {
 
 	public HeapSorter() {
@@ -15,20 +17,23 @@ public class HeapSorter extends Sorter {
 	void sort(int[] array, SortingVisualizer display) {
 		//8. create an integer called n and set it equal 
 		//   to the length of the array
+		int n = array.length;
 		
 		//9. make a for loop that starts half way between
 		//   0 and n and counts down until it is less than 0.
 		//   Inside this for loop, call the heapSort method with n and i
+		
+			
         
         //10. make a for loop that starts at n-1 
         //    and counts down until it is less than 0.
-        
+       
         	//11. swap the array elements at 0 and i.
  
             //12. call the heapSort method with i and 0
         
-	}
 	
+	}
 	public void heapSort(int[] array, int n, int i, SortingVisualizer display) {
 		//2. create an integer called largest and set it equal to i
 	
