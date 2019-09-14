@@ -6,6 +6,16 @@ public class BogoSorter extends Sorter {
 	public BogoSorter() {
 		type = "Bogo";
 	}
+
+	@Override
+	void sort(int[] array, SortingVisualizer display) {
+		// TODO Auto-generated method stub
+	if(inOrder(array)) {
+		return;
+	}
+		
+	}
+	
 	
 	// Bogo sort is a joke sorting algorithm. It is considered the most 
 	// inefficient sorting algorithm while still maintaining the possibility
@@ -18,7 +28,17 @@ public class BogoSorter extends Sorter {
 	// STEP 3. Go back to step 1.
 	
 	//1. Complete the sort method using the Bogo sort algorithm. 
-	@Override
-	
+	public boolean inOrder(int[] array) {
+			for (int i = 0; i < array.length - 1; i++) {
+			if(array[i]>array[i+1]) {
+				return false;
+			} 
+			
+		}
+			return true;
 	}
+
+	
 }
+
+
