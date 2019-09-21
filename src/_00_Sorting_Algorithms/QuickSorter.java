@@ -10,6 +10,11 @@ public class QuickSorter extends Sorter {
 	//   Complete the steps in the quickSort method.
 	//  You can use display.updateDisplay() to show the current
 	//   progress on the graph.
+	public void quickSort() {
+		int high = 100;
+		int low = 1;
+		
+	}
 	@Override
 	void sort(int[] array, SortingVisualizer display) {
 		//10. call the quickSort method with 0 and the length of the array minus one
