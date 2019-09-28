@@ -11,8 +11,9 @@ public class QuickSorter extends Sorter {
 	//  You can use display.updateDisplay() to show the current
 	//   progress on the graph.
 	public void quickSort() {
-		int high = 100;
-		int low = 1;
+	int low = 0;
+	int high = 100;
+	int pivot = low/high;
 		
 	}
 	@Override

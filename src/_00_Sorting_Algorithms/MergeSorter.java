@@ -28,9 +28,9 @@ public class MergeSorter extends Sorter {
 		}
 			//3. Create an integer called middle and set it 
 			//   equal to the half way point between low and high
-            
+        int middle = low/high;    
             //4. call the mergeSort method with low and middle
-           
+        
             //5. call the mergeSort method with middle + 1 and high
             
             //6. copy the elements from the array into the temporary array,
