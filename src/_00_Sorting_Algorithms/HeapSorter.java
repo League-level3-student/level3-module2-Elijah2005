@@ -32,7 +32,7 @@ public class HeapSorter extends Sorter {
 		// 11. swap the array elements at 0 and i.
 
 		// 12. call the heapSort method with i and 0
-
+		heapSort(array, i, 0, display);
 	}
 
 	public void heapSort(int[] array, int n, int i, SortingVisualizer display) {
