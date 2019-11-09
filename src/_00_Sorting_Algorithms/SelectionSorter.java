@@ -22,17 +22,15 @@ public class SelectionSorter extends Sorter {
 				// element at index, then set index equal to j
 				if (array[j] < array[index]) {
 					index = j;
-				
-
-				// 5. swap the array element at index with the array element at i
-				int temporary = array[index];
-				array[index] = array[i];
-				array[i] = temporary;
 				}
-				
 			}
-	display.updateDisplay();
+			// 5. swap the array element at index with the array element at i
+			int temporary = array[index];
+			array[index] = array[i];
+			array[i] = temporary;
+			display.updateDisplay();
 		}
 		
+
 	}
 }
