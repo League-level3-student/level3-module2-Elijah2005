@@ -61,10 +61,8 @@ public class _00_MoreAndMoreTests {
 
 	private boolean isSquare(int i) {
 		// TODO Auto-generated method stub
-		for (int j = 4; j <= i/4; j++) {
-			if(i%j==0) {
-				return true;
-			}
+		for (i = 2; i <= i*i; i++) {
+		return true;	
 		}
 		return false;
 	}
