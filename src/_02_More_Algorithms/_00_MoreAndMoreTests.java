@@ -61,28 +61,40 @@ public class _00_MoreAndMoreTests {
 
 	private boolean isSquare(int i) {
 		// TODO Auto-generated method stub
-		for (i = 2; i <= i*i; i++) {
-		return true;	
+		for (int j = 1; j <= i ; j++) {
+			if(i==j*j) {
+			return true;
+			}
 		}
 		return false;
 	}
 
-//	@Test
-//	  public void CubeTest() {
-//
-//	    assertTrue(isCube(27));
-//	    assertTrue(isCube(216));
-//	    assertTrue(isCube(729));
-//	    assertTrue(isCube(1));
-//	    assertFalse(isCube(3));
-//	    assertFalse(isCube(22));
-//	    assertFalse(isCube(143));
-//
-//	  }
+	@Test
+	  public void CubeTest() {
+
+	    assertTrue(isCube(27));
+	    assertTrue(isCube(216));
+	    assertTrue(isCube(729));
+	    assertTrue(isCube(1));
+	    assertFalse(isCube(3));
+	    assertFalse(isCube(22));
+	    assertFalse(isCube(143));
+
+	  }
+
+	private boolean isCube(int i) {
+		// TODO Auto-generated method stub
+		for (int j = 1; j <= i ; j++) {
+			if(i==j*j*j) {
+			return true;
+			}
+		}
+		return false;
+	}
+	}
 
 
 	
 
 
 
-}
