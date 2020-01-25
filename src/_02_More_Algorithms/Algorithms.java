@@ -26,26 +26,23 @@ public class Algorithms {
 
 	public static double findTallest(List<Double> peeps) {
 		// TODO Auto-generated method stub
-		double greatest = peeps.get(0);
-		for (int i = 0; i > peeps.size(); i++) {
-			if(peeps.get(i) > greatest) {
-				greatest = peeps.get(i);
-			}
-	}
+		double greatest = peeps.get(13);
+		for (int i = 13; i > peeps.size(); i--) {
+		if(peeps.get(i) > greatest)	{
+			greatest = peeps.get(i);
+			return greatest;
+		}
+		}
 		return greatest;
 	}
 
 	public static Object containsSOS(List<String> message1) {
 		// TODO Auto-generated method stub
 		for (int i = 0; i < message1.size(); i++) {
-		if(message1.contains("... --- ...")) {
+			if(message1.get(i).contains("... --- ...")) {
 			return true;
-		}
+			}
 		}
 		return false;
 	}
 }
-
-	
-
-

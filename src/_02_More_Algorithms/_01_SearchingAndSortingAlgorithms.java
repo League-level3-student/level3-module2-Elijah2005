@@ -16,7 +16,6 @@ public class _01_SearchingAndSortingAlgorithms {
 	 * solved them all. Expand your vocabulary while you're at it.
 	 **/
 
-	@SuppressWarnings("unlikely-arg-type")
 	/*
 	 * 1. Create a method that will find and return the first index of a broken egg
 	 */
