@@ -3,6 +3,7 @@ package _02_More_Algorithms;
 import java.util.List;
 
 public class Algorithms {
+
 	public static int findBrokenEgg(List<String> eggs) {
 		for (int i = 0; i < eggs.size(); i++) {
 			if (eggs.get(i).contains("cracked")) {
@@ -24,25 +25,36 @@ public class Algorithms {
 		return oysters.size();
 	}
 
-	public static double findTallest(List<Double> peeps) {
-		// TODO Auto-generated method stub
-		double greatest = peeps.get(13);
-		for (int i = 13; i > peeps.size(); i--) {
-		if(peeps.get(i) > greatest)	{
-			greatest = peeps.get(i);
-			return greatest;
-		}
-		}
-		return greatest;
-	}
-
 	public static Object containsSOS(List<String> message1) {
 		// TODO Auto-generated method stub
 		for (int i = 0; i < message1.size(); i++) {
-			if(message1.get(i).contains("... --- ...")) {
-			return true;
+			if (message1.get(i).contains("... --- ...")) {
+				return true;
 			}
 		}
 		return false;
 	}
+
+	public static double findTallest(List<Double> peeps) {
+		// TODO Auto-generated method stub
+		double greatest = peeps.get(0);
+		for (int i = 0; i < peeps.size(); i++) {
+			if(peeps.get(i) > greatest) {
+				greatest = peeps.get(i);
+			}
+		}
+		return greatest;
+	}
+
+	public static Object findLongestWord(List<String> words) {
+		// TODO Auto-generated method stub
+		String word = words.get(0);
+		int greatest = Integer.parseInt(word);
+		for (int i = 0; i < words.size(); i++) {
+			int i1 = Integer.parseInt(words.get(i));
+		}
+		return greatest;
+	}
+
+	
 }
