@@ -48,13 +48,26 @@ public class Algorithms {
 
 	public static Object findLongestWord(List<String> words) {
 		// TODO Auto-generated method stub
-		String word = words.get(0);
-		int greatest = Integer.parseInt(word);
+		String greatest = words.get(0);
 		for (int i = 0; i < words.size(); i++) {
-			int i1 = Integer.parseInt(words.get(i));
+			String otherWords = words.get(i);
+			if(otherWords.length() > greatest.length()) {
+				greatest = otherWords;
+			}
 		}
 		return greatest;
 	}
 
-	
+	public static List<String> sortScores(List<Double> results) {
+		// TODO Auto-generated method stub
+		double greatest = results.get(0);
+		for (int i = 0; i < results.size(); i++) {
+			double otherNum = results.get(i);
+			if(otherNum > greatest) {
+				
+			}
+		}
+		return null;
+	}
+
 }
