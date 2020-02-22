@@ -58,16 +58,17 @@ public class Algorithms {
 		return greatest;
 	}
 
-	public static List<String> sortScores(List<Double> results) {
+	public static double sortScores(List<Double> results) {
 		// TODO Auto-generated method stub
 		double greatest = results.get(0);
 		for (int i = 0; i < results.size(); i++) {
 			double otherNum = results.get(i);
 			if(otherNum > greatest) {
-				
+				greatest = otherNum;
 			}
 		}
-		return null;
+		return results.size();
 	}
+
 
 }
