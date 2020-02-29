@@ -60,15 +60,34 @@ public class Algorithms {
 
 	public static double sortScores(List<Double> results) {
 		// TODO Auto-generated method stub
-		double greatest = results.get(0);
-		for (int i = 0; i < results.size(); i++) {
-			double otherNum = results.get(i);
-			if(otherNum > greatest) {
-				greatest = otherNum;
+			double n = results.size();
+			for (double i = n / 2; i > 0; i--) {
+				heapSort(results, n, i, display);
 			}
-		}
+			for (double i = n - 1; i > 0; i--) {
 		return results.size();
+		double temporary = results.get(0);
+		results.get(0) = results.get(i);
+		results.get(i) = temporary;
+		heapSort(results, i, 0, display);
+		double largest = i;
+		double l = 2 * i + 1;
+		double r = 2 * i + 2;
+		if (l < n && results.get(l) > results.get(largest)) {
+			largest = l;
+		}
+		if (r < n && results.get(r) > results.get(largest)) {
+			largest = r;
+		}
+		if (largest != i) {
+			double temporary = results.get(i);
+			results.get(i) = results.get(largest);
+			array[largest] = temporary;
+			heapSort(results, n, largest, display);
+		}
+		display.updateDisplay();
 	}
 
+}
 
 }
