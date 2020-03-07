@@ -2,6 +2,8 @@ package _02_More_Algorithms;
 
 import java.util.List;
 
+import _00_Sorting_Algorithms.SortingVisualizer;
+
 public class Algorithms {
 
 	public static int findBrokenEgg(List<String> eggs) {
@@ -57,37 +59,5 @@ public class Algorithms {
 		}
 		return greatest;
 	}
-
-	public static double sortScores(List<Double> results) {
-		// TODO Auto-generated method stub
-			double n = results.size();
-			for (double i = n / 2; i > 0; i--) {
-				heapSort(results, n, i, display);
-			}
-			for (double i = n - 1; i > 0; i--) {
-		return results.size();
-		double temporary = results.get(0);
-		results.get(0) = results.get(i);
-		results.get(i) = temporary;
-		heapSort(results, i, 0, display);
-		double largest = i;
-		double l = 2 * i + 1;
-		double r = 2 * i + 2;
-		if (l < n && results.get(l) > results.get(largest)) {
-			largest = l;
-		}
-		if (r < n && results.get(r) > results.get(largest)) {
-			largest = r;
-		}
-		if (largest != i) {
-			double temporary = results.get(i);
-			results.get(i) = results.get(largest);
-			array[largest] = temporary;
-			heapSort(results, n, largest, display);
-		}
-		display.updateDisplay();
-	}
-
-}
 
 }
